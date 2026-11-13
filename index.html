@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#17130f" />
+  <meta name="description" content="Hotspot Cafe — your campus-side comfort food stop in Gantiganahalli, Bengaluru. Explore the menu and place an order." />
+  <title>Hotspot Cafe | Good food. Great breaks.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> A little break, a lot of flavour <span class="announcement-right">GANTIGANAHALLI · BENGALURU</span></div>
+  <header class="nav-wrap">
+    <a class="brand" href="#home" aria-label="Hotspot Cafe home"><span class="brand-mark">H<span>•</span></span><span class="brand-copy">HOTSPOT<small>CAFÉ · SRI KRISHNA ENTERPRISES</small></span></a>
+    <nav class="desktop-nav"><a href="#story">Our vibe</a><a href="#menu">Menu</a><a href="#visit">Find us</a></nav>
+    <div class="nav-actions"><a class="nav-order" href="#menu">Order now <span>↗</span></a><button class="cart-trigger" id="cartOpen" aria-label="Open cart">Bag <b id="cartCount">0</b></button><button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grain"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> YOUR CAMPUS-SIDE HAPPY PLACE</p>
+        <h1>Good food.<br><em>Great breaks.</em></h1>
+        <p class="hero-desc">From that spicy Maggi craving to a much-needed chai break — your favourite little escape is right here.</p>
+        <div class="hero-buttons"><a class="btn btn-primary" href="#menu">Explore the menu <span>↗</span></a><a class="text-link" href="#story">Get to know us <span>↓</span></a></div>
+        <div class="hero-proof"><div class="proof-stars">✳</div><div><strong>GANTIGANAHALLI</strong><small>Right by NITTE Meenakshi College</small></div><i></i><div><strong>Made for your break</strong><small>Good food, easy vibes</small></div></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-image-main"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=85" alt="A bowl of spicy noodles" /></div>
+        <div class="hero-image-small"><img src="https://images.unsplash.com/photo-1544787219-7f47cff2c8f0?auto=format&fit=crop&w=600&q=85" alt="Freshly poured tea" /></div>
+        <div class="floating-note"><span>✳</span><div><b>Break time?</b><small>We've got you.</small></div></div>
+        <div class="hero-stamp">FRESH<br>MOOD<br>ALWAYS</div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO GET HUNGRY</span><span>01 — 04</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Cafe highlights"><div class="ticker-track"><span>SPICY MAGGI</span>✳<span>CHAI & COFFEE</span>✳<span>FRIEND HANGOUTS</span>✳<span>FRIED RICE</span>✳<span>GOOD VIBES ONLY</span>✳<span>SPICY MAGGI</span>✳<span>CHAI & COFFEE</span>✳<span>FRIEND HANGOUTS</span>✳</div></section>
+
+    <section class="story section-pad" id="story">
+      <div class="section-kicker">01 / THE HOTSPOT FEEL</div>
+      <div class="story-grid">
+        <div class="story-title reveal"><p class="eyebrow dark"><span></span> NOT JUST A FOOD STOP</p><h2>Your break<br>deserves <em>better.</em></h2></div>
+        <div class="story-text reveal"><p>Between classes, after a long day, or when the hostel food just isn't hitting — there's always room for a proper comfort-food break.</p><p>Hotspot Cafe is a relaxed, student-friendly spot near NITTE Meenakshi College. Come hungry, bring your people, and make the little moments count.</p><a class="under-link" href="#visit">Come say hello <span>↗</span></a></div>
+      </div>
+      <div class="story-images"><div class="story-img large"><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1100&q=85" alt="Warm, casual cafe interior"/><span>YOUR EVERYDAY HANGOUT</span></div><div class="story-img small"><img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=85" alt="Coffee and cafe table"/><span>TAKE A BREATHER</span></div></div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="menu-heading"><div><div class="section-kicker light">02 / MADE FOR YOUR CRAVINGS</div><h2>What's calling<br><em>your name?</em></h2></div><p>Comfort food, quick bites and the classics you keep coming back for. Pick your favourites and add them to your bag.</p></div>
+      <div class="menu-toolbar"><div class="filters" id="filters"><button class="filter active" data-filter="all">All items</button><button class="filter" data-filter="maggi">Maggi</button><button class="filter" data-filter="meals">Meals</button><button class="filter" data-filter="drinks">Drinks</button></div><label class="search-box"><span>⌕</span><input id="menuSearch" type="search" placeholder="Find your craving..." /></label></div>
+      <div class="demo-note">MENU PREVIEW · Public listings mention these favourites, but do not publish a verified item-by-item price list. Confirm current prices on WhatsApp before payment.</div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="food-card" data-category="maggi" data-name="Schezwan Maggi"><div class="food-photo"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=80" alt="Spicy noodle bowl"><span class="food-tag">PUBLIC-LISTING FAVOURITE</span></div><div class="food-info"><div><h3>Schezwan Maggi</h3><p>A spicy, saucy comfort-food favourite mentioned in customer feedback.</p></div><div class="food-buy"><b>Price on request</b><button class="add-btn" data-id="schezwan" aria-label="Add Schezwan Maggi">+</button></div></div></article>
+        <article class="food-card" data-category="meals" data-name="Fried Rice"><div class="food-photo"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=700&q=80" alt="Fried rice"><span class="food-tag">CAFE FAVOURITE</span></div><div class="food-info"><div><h3>Fried Rice</h3><p>Fried rice is another dish specifically mentioned in the cafe listing.</p></div><div class="food-buy"><b>Price on request</b><button class="add-btn" data-id="friedrice" aria-label="Add Fried Rice">+</button></div></div></article>
+        <article class="food-card" data-category="drinks" data-name="Tea / Chai"><div class="food-photo"><img src="https://images.unsplash.com/photo-1544787219-7f47cff2c8f0?auto=format&fit=crop&w=700&q=80" alt="Tea in a cup"><span class="food-tag">CHAI BREAK</span></div><div class="food-info"><div><h3>Tea / Chai</h3><p>A popular warm drink highlighted in customer feedback.</p></div><div class="food-buy"><b>Price on request</b><button class="add-btn" data-id="chai" aria-label="Add Tea or Chai">+</button></div></div></article>
+        <article class="food-card" data-category="drinks" data-name="Coffee"><div class="food-photo"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="Coffee cup"></div><div class="food-info"><div><h3>Coffee</h3><p>Coffee is listed among the cafe's offerings.</p></div><div class="food-buy"><b>Price on request</b><button class="add-btn" data-id="coffee" aria-label="Add Coffee">+</button></div></div></article>
+      </div>
+      <div class="menu-foot"><span>CAN'T FIND YOUR FAVOURITE?</span><a href="#visit">Ask us at the cafe ↗</a></div>
+    </section>
+
+    <section class="vibe section-pad"><div class="vibe-copy reveal"><div class="section-kicker">03 / THE GOOD STUFF</div><h2>Good food.<br>Better <em>company.</em></h2><p>Some plans don't need planning. Just your favourite people, a table, and something delicious in the middle.</p><a class="btn btn-dark" href="#menu">Find your next bite <span>↗</span></a></div><div class="vibe-collage reveal"><img class="vibe-one" src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=85" alt="Friends sharing food"><img class="vibe-two" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=85" alt="Coffee on a table"><span class="scribble">made for<br>good times ↗</span></div></section>
+
+    <section class="visit-section" id="visit"><div class="visit-left"><div class="section-kicker light">04 / FIND YOUR HOTSPOT</div><h2>We're closer<br>than your <em>cravings.</em></h2><p>Drop by for a quick bite or make us your regular hangout spot.</p><a class="btn btn-primary" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Hotspot+Cafe+Sri+Krishna+Enterprises+Gantiganahalli+Bengaluru">Get directions <span>↗</span></a></div><div class="visit-right"><div class="visit-detail"><small>FIND US</small><p>4HQQ+4RH, NITTE Meenakshi College Rd,<br>BSF Campus, Yelahanka, Bengaluru,<br>Karnataka 560119</p></div><div class="visit-detail"><small>HOURS</small><p>Opening hours need owner confirmation.</p><em>Public listings show conflicting timings; please confirm before publishing.</em></div><div class="visit-detail"><small>ORDER & ENQUIRIES</small><p><a href="https://wa.me/918160380491" target="_blank" rel="noreferrer">+91 81603 80491 · WhatsApp orders ↗</a></p></div></div></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">H<span>•</span></span><span class="brand-copy">HOTSPOT<small>CAFÉ · SRI KRISHNA ENTERPRISES</small></span></a><p>Made for good breaks in Gantiganahalli, Bengaluru.</p><div class="footer-bottom"><span>© <span id="year"></span> HOTSPOT CAFE</span><span>GOOD FOOD. GREAT BREAKS.</span><a href="#home">BACK TO TOP ↑</a></div></footer>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Your order bag" aria-hidden="true"><div class="drawer-head"><div><small>YOUR ORDER</small><h3>Your bag<span>.</span></h3></div><button id="cartClose" class="close-btn" aria-label="Close cart">×</button></div><div class="cart-items" id="cartItems"><div class="empty-cart"><span>✳</span><h4>Your bag is taking a break.</h4><p>Add something delicious from the menu.</p></div></div><div class="cart-summary"><div><span>Subtotal</span><b id="cartSubtotal">₹0</b></div><small>Taxes, packaging and delivery (if applicable) will be confirmed at checkout.</small><button class="btn btn-primary checkout-btn" id="checkoutBtn" disabled>Continue to checkout <span>↗</span></button></div></aside>
+
+  <div class="modal-backdrop" id="checkoutBackdrop"><div class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><div class="drawer-head"><div><small>ALMOST THERE</small><h3 id="checkoutTitle">Checkout<span>.</span></h3></div><button id="checkoutClose" class="close-btn" aria-label="Close checkout">×</button></div><form id="checkoutForm"><label>Your name<input required name="name" placeholder="e.g. Alex" /></label><label>Phone number<input required name="phone" type="tel" pattern="[0-9+() -]{10,}" placeholder="10-digit mobile number" /></label><label>How would you like your order?<select name="fulfilment" id="fulfilment"><option value="Pickup">Pickup</option><option value="Delivery">Delivery (subject to service-area confirmation)</option></select></label><label id="addressField" class="hidden">Delivery address<input name="address" placeholder="Building, street, area and landmark" /></label><label>Notes for the cafe <textarea name="notes" rows="2" placeholder="Any preferences? (optional)"></textarea></label><div class="checkout-total"><span>Items selected</span><b id="checkoutTotal">0 items</b></div><p class="checkout-disclaimer">This sends an order request to the cafe on WhatsApp. The cafe must confirm item availability, final prices, delivery charges and total. Razorpay is not connected yet; do not treat this as a paid order.</p><button class="btn btn-primary" type="submit">Continue on WhatsApp <span>↗</span></button></form></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
